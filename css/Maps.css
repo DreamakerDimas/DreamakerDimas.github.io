@@ -4,7 +4,6 @@
 	position: fixed;
 	max-height: 550px;
 	max-width: 265px;
-	scroll-margin-block: initial;
 	background-color: rgba(39, 21, 56, 0.95	);
 	box-shadow: inset 0 0 10px 10px rgba(0,0,0,.75);
 	border: solid 2px grey;
@@ -23,6 +22,7 @@
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	overflow: scroll;
 }
 
 #maps1 {
