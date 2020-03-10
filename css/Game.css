@@ -6,7 +6,8 @@
 	border: solid 2px grey;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
-	padding: 30px;
+	padding: 15px 25px 15px 25px;
+	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
 	color: #24a7ad;
 
@@ -26,7 +27,7 @@
 button {
 	
 	font-size: 20px;
-	font-family: Bookman Old Style;
+	font-family: 'Oswald', sans-serif;
 	font-weight: 500;
 	color: #6b0580;
 	border-radius: 4px;
