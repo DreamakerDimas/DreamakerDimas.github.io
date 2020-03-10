@@ -36,8 +36,7 @@ svg {
 }
 
 .Country {
-	transition: 0.3s stroke;
-	transition: 0.2s fill;
+	transition: 0.3s, stroke, fill;
 	stroke: rgba(220, 220, 220, 0);
 	stroke-width: 22px;
 	stroke-linecap: round;
@@ -470,8 +469,7 @@ svg {
 }
 
 #Warp {
-	transition: 0.3s stroke;
-	transition: 0.2s fill;
+	transition: 0.3s, stroke, fill;
 	stroke: rgba(191, 55, 55, 0.1);
 	stroke-width: 4px;
 	fill: rgba(191, 55, 55, 0.1);
