@@ -1,0 +1,484 @@
+.description {
+	display: none;
+	top: 25px;
+	position: fixed;
+	max-height: 550px;
+	max-width: 265px;
+	background-color: rgba(39, 21, 56, 0.95	);
+	box-shadow: inset 0 0 10px 10px rgba(0,0,0,.75);
+	border: solid 2px grey;
+	border-radius: 8px;
+	padding: 5px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	color: white;
+	z-index: 9999;
+	text-align: center;
+	font-size: 15px;
+	font-family: Candara;
+	color: #9b8ff2;
+}
+#maps {
+	position: static;
+	text-align: center;
+	float: right;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#maps1 {
+	position: relative;
+}
+svg {
+	position: absolute;
+	
+	height: 94.5878434638%;
+	width: 94.983277592%;
+}
+
+.Country {
+	transition: 0.3s stroke;
+	transition: 0.2s fill;
+	stroke: rgba(220, 220, 220, 0);
+	stroke-width: 22px;
+	stroke-linecap: round;
+}
+.Country:hover {
+	stroke: rgba(188, 188, 188, 0.7);
+}
+
+
+#DCC {
+	fill: rgba(255, 255, 255, 0.1);
+}
+#DCC:hover {
+	fill: rgba(255, 255, 255, 0.6);
+}
+#Wall {
+	fill: rgba(255, 255, 255, 0.1);
+}
+#Wall:hover {
+	fill: rgba(255, 255, 255, 0.6);
+}
+#NeutralEmpire {
+	fill: rgba(255, 255, 255, 0.1);
+}
+#NeutralEmpire:hover {
+	fill: rgba(255, 255, 255, 0.6);
+}
+#CitadelMarker {
+	fill: rgba(255, 255, 255, 0.1);
+}
+#CitadelMarker:hover {
+	fill: rgba(255, 255, 255, 0.6);
+}
+#Citadel {
+	fill: rgba(255, 255, 255, 0.1);
+}
+#Citadel:hover {
+	fill: rgba(255, 255, 255, 0.6);
+}
+#Federation {
+	fill: rgba(20, 11, 140, 0.2);
+}
+#Federation:hover {
+	fill: rgba(16, 0, 237, 0.6);
+}
+#FederationTU {
+	fill: rgba(36, 227, 217, 0.2);
+}
+#FederationTU:hover {
+	fill: rgba(36, 227, 217, 0.7);
+}
+#PsyonicsH {
+	fill: rgba(145, 145, 9, 0.1);
+}
+#PsyonicsH:hover {
+	fill: rgba(199, 199, 48, 0.7);
+}
+#Pheodals {
+	fill: rgba(46, 153, 14, 0.1);
+}
+#Pheodals:hover {
+	fill: rgba(57, 176, 21, 0.7);
+}
+#OrksClans {
+	fill: rgba(71, 186, 128, 0.1);
+}
+#OrksClans:hover {
+	fill: rgba(71, 186, 128, 0.7);
+}
+#XenoPurple {
+	fill: rgba(138, 39, 184, 0.1);
+}
+#XenoPurple:hover {
+	fill: rgba(138, 39, 184, 0.7);
+}
+#Imperial {
+	fill: rgba(184, 117, 29, 0.1);
+}
+#Imperial:hover {
+	fill: rgba(184, 117, 29, 0.7);
+}
+#TradeUnion {
+	fill: rgba(196, 196, 196, 0.1);
+}
+#TradeUnion:hover {
+	fill: rgba(196, 196, 196, 0.7);
+}
+#AllianceH {
+	fill: rgba(155, 5, 168, 0.1);
+}
+#AllianceH:hover {
+	fill: rgba(155, 5, 168, 0.7);
+}
+#AllianceHEnemy {
+	fill: rgba(112, 128, 27, 0.1);
+}
+#AllianceHEnemy:hover {
+	fill: rgba(112, 128, 27, 0.7);
+}
+#Sinth {
+	fill: rgba(122, 122, 122, 0.1);
+}
+#Sinth:hover {
+	fill: rgba(122, 122, 122, 0.7);
+}
+#XenoSwarm {
+	fill: rgba(162, 39, 179, 0.2);
+}
+#XenoSwarm:hover {
+	fill: rgba(162, 39, 179, 0.6);
+}
+
+
+
+#EnemyTop {
+	fill: rgba(61, 37, 168, 0.1);
+}
+#EnemyTop:hover {
+	fill: rgba(61, 37, 168, 0.7);
+}
+#EnemyRight {
+	fill: rgba(197, 237, 19, 0.1);
+}
+#EnemyRight:hover {
+	fill: rgba(197, 237, 19, 0.7);
+}
+#EnemyTopRight {
+	fill: rgba(34, 191, 178, 0.1);
+}
+#EnemyTopRight:hover {
+	fill: rgba(34, 191, 178, 0.7);
+}
+#EnemyTopTop {
+	fill: rgba(56, 138, 74, 0.1);
+}
+#EnemyTopTop:hover {
+	fill: rgba(56, 138, 74, 0.7);
+}
+#AllianceHTop {
+	fill: rgba(181, 45, 93, 0.1);
+}
+#AllianceHTop:hover {
+	fill: rgba(181, 45, 93, 0.7);
+}
+#AllianceHRight {
+	fill: rgba(52, 71, 133, 0.1);
+}
+#AllianceHRight:hover {
+	fill: rgba(52, 71, 133, 0.7);
+}
+#TradeUnionTop {
+	fill: rgba(194, 68, 68, 0.1);
+}
+#TradeUnionTop:hover {
+	fill: rgba(194, 68, 68, 0.7);
+}
+#TradeUnionTopOrange {
+	fill: rgba(199, 74, 12, 0.1);
+}
+#TradeUnionTopOrange:hover {
+	fill: rgba(199, 74, 12, 0.7);
+}
+#TradeUnionTopBlue {
+	fill: rgba(63, 75, 204, 0.1);
+}
+#TradeUnionTopBlue:hover {
+	fill: rgba(63, 75, 204, 0.7);
+}
+#TradeUnionTopGreen {
+	fill: rgba(1, 145, 1, 0.1);
+}
+#TradeUnionTopGreen:hover {
+	fill: rgba(1, 145, 1, 0.7);
+}
+#TradeUnionLeftTop {
+	fill: rgba(232, 224, 137, 0.1);
+}
+#TradeUnionLeftTop:hover {
+	fill: rgba(232, 224, 137, 0.7);
+}
+#ImperialBot {
+	fill: rgba(18, 186, 9, 0.1);
+}
+#ImperialBot:hover {
+	fill: rgba(18, 186, 9, 0.7);
+}
+#ImperialLeft {
+	fill: rgba(48, 130, 114, 0.1);
+}
+#ImperialLeft:hover {
+	fill: rgba(48, 130, 114, 0.7);
+}
+#ImperialTop {
+	fill: rgba(89, 27, 37, 0.1);
+}
+#ImperialTop:hover {
+	fill: rgba(89, 27, 37, 0.7);
+}
+#XenoBotPurple {
+	fill: rgba(110, 19, 110, 0.1);
+}
+#XenoBotPurple:hover {
+	fill: rgba(110, 19, 110, 0.7);
+}
+#XenoLeftBot {
+	fill: rgba(51, 255, 0, 0.1);
+}
+#XenoLeftBot:hover {
+	fill: rgba(51, 255, 0, 0.7);
+}
+#XenoLeftDarkGold {
+	fill: rgba(140, 140, 13, 0.1);
+}
+#XenoLeftDarkGold:hover {
+	fill: rgba(140, 140, 13, 0.7);
+}
+#XenoLeftBlurBlue {
+	fill: rgba(65, 77, 115, 0.1);
+}
+#XenoLeftBlurBlue:hover {
+	fill: rgba(65, 77, 115, 0.7);
+}
+#XenoLeft {
+	fill: rgba(152, 0, 222, 0.1);
+}
+#XenoLeft:hover {
+	fill: rgba(152, 0, 222, 0.7);
+}
+#XenoLeftS {
+	fill: rgba(111, 0, 222, 0.1);
+}
+#XenoLeftS:hover {
+	fill: rgba(111, 0, 222, 0.7);
+}
+#XenoEmpire {
+	fill: rgba(163, 49, 85, 0.1);
+}
+#XenoEmpire:hover {
+	fill: rgba(163, 49, 85, 0.7);
+}
+#XenoEmpireTop {
+	fill: rgba(96, 45, 140, 0.1);
+}
+#XenoEmpireTop:hover {
+	fill: rgba(96, 45, 140, 0.7);
+}
+#XenoEmpireLeft1 {
+	fill: rgba(69, 122, 59, 0.1);
+}
+#XenoEmpireLeft1:hover {
+	fill: rgba(69, 122, 59, 0.7);
+}
+#XenoEmpireLeft2 {
+	fill: rgba(59, 84, 122, 0.1);
+}
+#XenoEmpireLeft2:hover {
+	fill: rgba(59, 84, 122, 0.7);
+}
+#XenoEmpireLeftTop {
+	fill: rgba(107, 10, 145, 0.1);
+}
+#XenoEmpireLeftTop:hover {
+	fill: rgba(107, 10, 145, 0.7);
+}
+#UnFootBot {
+	fill: rgba(38, 38, 191, 0.1);
+}
+#UnFootBot:hover {
+	fill: rgba(38, 38, 191, 0.7);
+}
+#UnFootRight {
+	fill: rgba(50, 143, 184, 0.1);
+}
+#UnFootRight:hover {
+	fill: rgba(50, 143, 184, 0.7);
+}
+#UnFootLeftGreen {
+	fill: rgba(57, 166, 35, 0.1);
+}
+#UnFootLeftGreen:hover {
+	fill: rgba(57, 166, 35, 0.7);
+}
+#UnFootLeft {
+	fill: rgba(62, 64, 87, 0.1);
+}
+#UnFootLeft:hover {
+	fill: rgba(62, 64, 87, 0.7);
+}
+#UnFootCenter {
+	fill: rgba(133, 133, 34, 0.1);
+}
+#UnFootCenter:hover {
+	fill: rgba(133, 133, 34, 0.7);
+}
+#UnFootTop {
+	fill: rgba(82, 89, 67, 0.1);
+}
+#UnFootTop:hover {
+	fill: rgba(82, 89, 67, 0.7);
+}
+#XenoEmpireRight {
+	fill: rgba(182, 191, 163, 0.1);
+}
+#XenoEmpireRight:hover {
+	fill: rgba(182, 191, 163, 0.7);
+}
+#XenoEmpireLeftTop {
+	fill: rgba(99, 79, 28, 0.1);
+}
+#XenoEmpireLeftTop:hover {
+	fill: rgba(99, 79, 28, 0.7);
+}
+#XenoEmpireLeftS {
+	fill: rgba(142, 209, 206, 0.1);
+}
+#XenoEmpireLeftS:hover {
+	fill: rgba(142, 209, 206, 0.7);
+}
+#XenoSwarmBotBot {
+	fill: rgba(105, 163, 47, 0.1);
+}
+#XenoSwarmBotBot:hover {
+	fill: rgba(105, 163, 47, 0.7);
+}
+#XenoSwarmBotLeft {
+	fill: rgba(119, 153, 137, 0.1);
+}
+#XenoSwarmBotLeft:hover {
+	fill: rgba(119, 153, 137, 0.7);
+}
+#XenoSwarmLeft {
+	fill: rgba(55, 97, 140, 0.1);
+}
+#XenoSwarmLeft:hover {
+	fill: rgba(55, 97, 140, 0.7);
+}
+#XenoSwarmLeftS {
+	fill: rgba(140, 137, 69, 0.1);
+}
+#XenoSwarmLeftS:hover {
+	fill: rgba(140, 137, 69, 0.7);
+}
+#AntiSwarmCoalition {
+	fill: rgba(47, 163, 109, 0.1);
+}
+#AntiSwarmCoalition:hover {
+	fill: rgba(47, 163, 109, 0.7);
+}
+#AntiSwarmCoalitionRight {
+	fill: rgba(81, 45, 140, 0.1);
+}
+#AntiSwarmCoalitionRight:hover {
+	fill: rgba(81, 45, 140, 0.7);
+}
+#SmallRight1 {
+	fill: rgba(27, 105, 194, 0.1);
+}
+#SmallRight1:hover {
+	fill: rgba(27, 105, 194, 0.7);
+}
+#SmallCoalition {
+	fill: rgba(82, 161, 103, 0.1);
+}
+#SmallCoalition:hover {
+	fill: rgba(82, 161, 103, 0.7);
+}
+#SmallRight2 {
+	fill: rgba(153, 122, 54, 0.1);
+}
+#SmallRight2:hover {
+	fill: rgba(153, 122, 54, 0.7);
+}
+#SmallRight3 {
+	fill: rgba(93, 153, 54, 0.1);
+}
+#SmallRight3:hover {
+	fill: rgba(93, 153, 54, 0.7);
+}
+#SmallRight4 {
+	fill: rgba(145, 76, 41, 0.1);
+}
+#SmallRight4:hover {
+	fill: rgba(145, 76, 41, 0.7);
+}
+#SmallRight5 {
+	fill: rgba(145, 121, 41, 0.1);
+}
+#SmallRight5:hover {
+	fill: rgba(145, 121, 41, 0.7);
+}
+#SmallSw {
+	fill: rgba(145, 121, 41, 0.1);
+}
+#SmallSw:hover {
+	fill: rgba(145, 121, 41, 0.7);
+}
+#SmallSw2 {
+	fill: rgba(30, 130, 30, 0.1);
+}
+#SmallSw2:hover {
+	fill: rgba(30, 130, 30, 0.7);
+}
+
+#Small1 {
+	fill: rgba(182, 36, 227, 0.1);
+}
+#Small1:hover {
+	fill: rgba(182, 36, 227, 0.7);
+}
+
+#Small2 {
+	fill: rgba(36, 227, 211, 0.1);
+}
+#Small2:hover {
+	fill: rgba(36, 227, 211, 0.7);
+}
+
+#Small3 {
+	fill: rgba(140, 143, 46, 0.1);
+}
+#Small3:hover {
+	fill: rgba(140, 143, 46, 0.7);
+}
+
+#Small4 {
+	fill: rgba(99, 143, 46, 0.1);
+}
+#Small4:hover {
+	fill: rgba(99, 143, 46, 0.7);
+}
+
+#Warp {
+	transition: 0.3s stroke;
+	transition: 0.2s fill;
+	stroke: rgba(191, 55, 55, 0.1);
+	stroke-width: 4px;
+	fill: rgba(191, 55, 55, 0.1);
+}
+#Warp:hover {
+	fill: rgba(191, 55, 55, 0.8);
+	stroke: rgba(191, 55, 55, 0.8);
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang='ru'>
+
+	<head>
+		<meta charset='UTF-8'/>
+		<title>Энциклопедия Great Universe</title>
+		<link rel="stylesheet" type="text/css" href="../css/Main.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/Game.css"/>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
+		<script type="text/javascript" src="../js/gamescript.js"></script>
+	</head>
+
+	<audio preload="auto" id="ButtAudio">
+		<source src="../sound/button_sound.mp3" type="audio/mp3"/>
+		<source src="../sound/button_sound.ogg" type="audio/ogg"/>
+	</audio>
+
+	<body>
+
+		<header>
+			<img src="img/logo.png" width='650px'/>
+
+		</header>
+
+
+		<nav>
+			<a class="NavButton" href="../index.html">Домой</a>
+			<a class="NavButton" href="Maps.html">Карта Галактики</a>
+			<a class="NavButton" href="Characters.html">Персонажи</a>
+			<a class="NavButton" href="../index.html">Рассы</a>
+			<a class="NavButton" href="History.html">История</a>
+		</nav>
+
+		
+
+		<div class="row">
+
+			<div class="MainBox">
+				<div class="MainContent">
+					
+					<center><div id="TextBox">
+
+						<a type="text" id="DispGameText" value=""></a>
+					
+
+					</div></center>
+
+					<div id="ChoiseBox">
+						
+						
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="sidebar">
+				<div class="statistic-sidebar">
+					<p>Для игры доступен только Капитан. Характеристики для выбора: 6,6,7,7.</p>
+					------------------<br/>
+					Здоровье <a type="text" id="health" value=""></a>%<br/>
+					Запас сил <a type="text" id="DispTired" value=""></a>%<br/>
+					-------------------<br/>
+					Сила <a type="text" id="DispStrength" value=""></a> <br/>
+					Ловкость <a type="text" id="DispAgility" value=""></a> <br/>
+					Красноречие <a type="text" id="DispStamina" value=""> </a><br/>
+					Интелект <a type="text" id="DispMind" value=""></a> <br/>
+					------------------<br/>
+					Ход: <a type="text" id="DispTurn" Value=""></a> <br/> <br/>
+					Персонаж: <a type="text" id="DispPlayer"></a> <br/><br/>
+
+					<button id="Bupdate">Update Sidebar</button>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+	
+
+</html>
