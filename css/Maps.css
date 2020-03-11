@@ -1,6 +1,8 @@
 .description {
+    float: initial;
 	display: none;
 	top: 25px;
+    right: 25px;
 	position: fixed;
 	max-height: 550px;
 	max-width: 265px;
@@ -18,11 +20,10 @@
 #maps {
 	position: static;
 	text-align: center;
-	float: right;
+	float: left;
 	width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
-	overflow: scroll;
 }
 
 #maps1 {
