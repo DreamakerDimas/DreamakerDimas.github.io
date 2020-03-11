@@ -1,8 +1,8 @@
 var points = 10;
-var helth = 100;
+var helth = 100;//health, I know
 var tired = 100;
 var strength = 4;
-var agility = 4;
+var agility = 4;//
 var speach = 4;
 var mind = 4;
 
