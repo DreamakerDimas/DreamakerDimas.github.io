@@ -28,6 +28,12 @@ $('.Country').hover(
 		}
 	)
 ;
-	
+
+	function mapSize(){
+	$("#svgMap").outerWidth($("#mapImage").width() * 1.0315);
+	$("#svgMap").outerHeight($("#mapImage").height() * 1.0315);
+	}
+	$(window).on('resize',mapSize);
+	mapSize();
 });
 	

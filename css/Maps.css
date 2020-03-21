@@ -18,23 +18,26 @@
 	color: #9b8ff2;
 }
 #maps {
-	position: static;
 	text-align: center;
 	float: left;
-	width: 1200px;
-	margin-top: 15px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 95%;
+	/*width: 1200px;*/
+	margin: 15px auto 0;
+	box-sizing: content-box;
 }
 
 #maps1 {
 	position: relative;
+	box-sizing: border-box;
+}
+#mapImage {
+	width: 100%;
+
+	margin: 0;
+	padding: 0;
 }
 svg {
 	position: absolute;
-	
-	height: 94.5878434638%;
-	width: 94.983277592%;
 }
 
 .Country {
