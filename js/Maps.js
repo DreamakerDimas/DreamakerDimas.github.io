@@ -32,7 +32,7 @@ $('.Country').hover(
 ;
 	mapSize();
 	function mapSizeChange (isZoomIn){
-    	if(isZoomIn === true && mapSizeCounter < 15){
+    	if(isZoomIn === true && mapSizeCounter < 9){
     		mapMultCoef += 0.2;
     		mapSizeCounter++;
 		}
