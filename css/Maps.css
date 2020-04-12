@@ -19,27 +19,55 @@
 }
 #maps {
 	text-align: center;
-	float: left;
-	width: 95%;
+	width: 99%;
+	max-height: 1241px;
 	/*width: 1200px;*/
-	margin: 15px auto 0;
-	box-sizing: content-box;
+	margin: auto auto;
+	box-sizing: border-box;
+	padding: 5px;
 }
 
 #maps1 {
 	position: relative;
 	box-sizing: border-box;
+	overflow: scroll;
+	text-align: center;
 }
 #mapImage {
 	width: 100%;
-
-	margin: 0;
 	padding: 0;
 }
 svg {
 	position: absolute;
 }
 
+/*Buttons styles*/
+.mapButtonsHolder{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: flex-start;
+	padding: 20px;
+	z-index: 20;
+}
+.mapButtons{
+	width: 32px;
+	height: 32px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-bottom-right-radius: 130px 60px;
+	border-bottom-left-radius: 130px 60px;
+	border: solid 2px grey;
+	font-size: 20px;
+}
+.mapButtons + .mapButtons{
+	margin-left: 10px;
+}
+#mapSizePlus{
+
+}
+
+/*Region style*/
 .Country {
 	transition: 0.3s, stroke, fill;
 	stroke: rgba(220, 220, 220, 0);
@@ -50,7 +78,7 @@ svg {
 	stroke: rgba(188, 188, 188, 0.7);
 }
 
-
+/*ID regions*/
 #DCC {
 	fill: rgba(255, 255, 255, 0.1);
 }

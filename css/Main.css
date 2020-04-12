@@ -125,11 +125,14 @@ a {
 	color: white;
 }
 
+
+/*Character.html*/
+
 .charFlexContainer{
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	align-content: space-between;
+	align-content: space-around;
 	width: 100%;
 	margin-top: 10px;
 }
@@ -153,11 +156,11 @@ a {
 }
 
 .charLeft{
-	min-width: 100px;
+	min-width: 310px;
 	max-width: 35%;
 	flex-grow: 1;
-
 	padding: 5px;
+	max-height: 450px;
 }
 
 .charLeft > img {
@@ -171,6 +174,10 @@ a {
 	min-width: 200px;
 	flex-grow: 5;
 }
+
+/*end Character*/
+
+/*History.html*/
 
 td,th {
 	border: solid 1px black;
@@ -204,3 +211,5 @@ thead
 {
     text-align: center;
 }
+
+/*end History*/
