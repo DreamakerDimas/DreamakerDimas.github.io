@@ -55,8 +55,7 @@ svg {
 	width: 32px;
 	height: 32px;
 	background-color: rgba(255, 255, 255, 0.5);
-	border-bottom-right-radius: 130px 60px;
-	border-bottom-left-radius: 130px 60px;
+	border-radius: 20px;
 	border: solid 2px grey;
 	font-size: 20px;
 }
