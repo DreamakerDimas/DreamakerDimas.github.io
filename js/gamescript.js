@@ -1,33 +1,33 @@
-var points = 10;
-var helth = 100;//health, I know
-var tired = 100;
-var strength = 4;
-var agility = 4;//
-var speach = 4;
-var mind = 4;
+let points = 10;
+let helth = 100;//health, I know
+let tired = 100;
+let strength = 4;
+let agility = 4;
+let speach = 4;
+let mind = 4;
 
-var pointsFirst = true;
-var GameText = "test";
-var turn = 0;
-var character = " ";
-var PlayerRole = "-";
-var choise1 = " ";
-var choise2 = " ";
-var choise3 = " ";
-var choise4 = " ";
-var MakeChoise1 = false;
-var MakeChoise2 = false;
-var MakeChoise3 = false;
-var MakeChoise4 = false;
+let pointsFirst = true;
+let GameText = "test";
+let turn = 0;
+let character = " ";
+let PlayerRole = "-";
+let choise1 = " ";
+let choise2 = " ";
+let choise3 = " ";
+let choise4 = " ";
+let MakeChoise1 = false;
+let MakeChoise2 = false;
+let MakeChoise3 = false;
+let MakeChoise4 = false;
 
 jQuery('document').ready(function() {
 
 //Персонажи:
-var PlayerMainGuard = function() {
+let PlayerMainGuard = function() {
 	GameText = '---';
 	return;
 };
-var PlayerCaptain = function() {
+let PlayerCaptain = function() {
 	if (turn === 1) {
 		GameText = '<p> В детстве я всегда мечтал о том, как стану космонавтом, буду бороздить просторы вселенной, встречать различных существ и просто утопать во всевозможных приключениях. Как же я тогда ошибался, за исключением приключений, их просто масса, ведь каждый недочёт, неосмотрительность, да и любая ошибка может стать роковой. Особенно на испытательных миссиях, где эти недочёты и предстоит выявить. Конечно, став повзрослее я понимал, что космос – это не курорт, а в первую очередь передовая, где нет места сомнению, сентиментальности и слабости. Но как можно представить себе великое ничто, бездну, всеобъемлющую тьму, осознание изоляции и одиночества? Никак… Пока лично не испытаешь. Из лучших курсантов, былых вояк и даже опытных космонавтов у многих сдали нервы, когда они оказались одни против космоса, без поддержки Земли и возможности вернуться. Видимо осознание пустоты и тщетности всех усилий просто ломало, сводило с ума, каждого по-своему. Но я один из «счастливчиков» и не подвержен таким переменам, наверное, требуется определённый склад ума, жизненный опыт, или что-то в этом роде.</p> <p> Сейчас я направляюсь в сторону Марса на очередное испытание, в этот раз в роли капитана. Конечно, мне не в первый раз руководить экипажем, но сейчас что-то не так. У меня есть какое-то предчувствие, странная тяжесть, не физическая, а ментальная. И это не связано со всей этой атмосферой недосказанности, секретные миссии – это не редкость, однако ранее о испытания предупреждали за неделю до вылета, сейчас же меня уведомили за 12 часов и не разрешили брать с собой вообще ничего, даже нижнего белья или фотографии. Меня просто поставили перед фактом и дали пару часов на прощание с семьей, остальное время заняла дорога до космопорта и подготовка к полёту. Но как и всегда я готов выполнить свой долг ради всего человечества.</p> ' +
 		'<button id="FirstChoise"></button> <button id="SecondChoise" class="hide"></button> <button id="ThirdChoise" class="hide"></button> <button id="FourthChoise" class="hide"></button>';
@@ -106,30 +106,33 @@ var PlayerCaptain = function() {
 		return;
 	}
 	if (turn === 7) {
-		GameText = 'Всё величие момента испортила одна деталь. Почему же капитаном сего судна выбрали именно меня? В тех случаях, когда я участвовал в значимых миссиях, лейтенантские посты были потолком доверия со стороны агентства. И такой важный пост на исторической миссии... Впрочем, даже если меня застрелят через минуту, я буду благодарен за это назначение. У трапа стояло ещё несколько человек, основная масса экипажа уже была на борту, а некоторые и вовсе не сходили с него месяцами. Открылась внешняя перегородка и дверь в шлюзовой отсек. Последние члены экипажа взошли на борт... Интерьер корабля сочетал в себе ретро- и нео-футуризм, являясь катарсисом всей научной фантастики... Количество свободного пространства и обстановка воссоздавали ощущение пребывания на станции или вовсе на поверхности планеты. ' +
+		GameText = 'Всё величие момента испортила одна деталь. Почему же капитаном сего судна выбрали именно меня? В тех случаях, когда я участвовал в значимых миссиях, лейтенантские посты были потолком доверия со стороны агентства. И такой важный пост на исторической миссии... Впрочем, даже если меня застрелят через минуту, я буду благодарен за это назначение. У трапа стояло ещё несколько человек, основная масса экипажа уже была на борту, а некоторые и вовсе не сходили с него месяцами. <br/><br/> Открылась внешняя перегородка и дверь в шлюзовой отсек. Последние члены экипажа взошли на борт... Интерьер корабля сочетал в себе ретро- и нео-футуризм, являясь катарсисом всей научной фантастики... Количество свободного пространства и обстановка воссоздавали ощущение пребывания на станции или вовсе на поверхности планеты. <br/><br/>' +
 		'<button id="FirstChoise"></button> <button id="SecondChoise" class="hide"></button> <button id="ThirdChoise" class="hide"></button> <button id="FourthChoise" class="hide"></button>';
 		choise1 = "Далее";
 		return;
 	}
 	if (turn === 8) {
-		GameText = '';
+		GameText = 'На коммуникатор пришло сообщение с прозьбой пройти психологический тест. Пройдя в свою каюту, пусть и небольшую, но личную, Вы сели за стол с терминалом. <br/><br/> [Информация на экране]: Должность: Капитан. Доступ к системам: полный. Полномочия во время миссии: неограничены (По возвращению Будет проведена оценка корректности действий. Однако Вы в праве предпринимать любые решения, необходимые для успешного выполнения миссии) <br/><br/>' +
+			'<button id="FirstChoise"></button> <br/> <button id="SecondChoise"></button> <button id="ThirdChoise" class="hide"></button> <button id="FourthChoise" class="hide"></button>';
+		choise1 = "Сообщить об подозрениях насчёт миссии";
+		choise2 = "Не сообщять";
 		return;
 	}
 
 };
-var PlayerScientist = function () {
+let PlayerScientist = function () {
 	GameText = '---';
 	return;
 };
-var PlayerEngineer = function () {
+let PlayerEngineer = function () {
 	GameText = '---';
 	return;
 };
-var PlayerSecutiry = function () {
+let PlayerSecutiry = function () {
 	GameText = '---';
 	return;
 };
-var PlayerService = function () {
+let PlayerService = function () {
 	GameText = '---';
 	return;
 };
@@ -137,7 +140,7 @@ var PlayerService = function () {
 
 
 //Клик по кнопкам:
-var clickFirstChoise = function() {
+let clickFirstChoise = function() {
 
 	if (turn === 0 && points > 0) {
 		strength++;
@@ -192,7 +195,7 @@ var clickFirstChoise = function() {
 
 	stat_update();
 };
-var clickSecondChoise = function() {
+let clickSecondChoise = function() {
 
 	if (turn === 0 && points > 0) {
 		agility++;
@@ -271,7 +274,7 @@ var clickSecondChoise = function() {
 
 	stat_update();
 };
-var clickThirdChoise = function() {
+let clickThirdChoise = function() {
 
 	if (turn === 0 && points > 0) {
 		speach++;
@@ -330,7 +333,7 @@ var clickThirdChoise = function() {
 
 	stat_update();
 };
-var clickFourthChoise = function() {
+let clickFourthChoise = function() {
 
 
 	if (turn === 0 && points > 0) {
